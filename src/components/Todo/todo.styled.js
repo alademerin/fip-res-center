@@ -11,7 +11,7 @@ export const StyledTodo = styled.div`
   /* display: none; */
 
   @media screen and (max-width: 1000px) {
-    width: 400px;
+    width: 100vw;
   }
 `
 export const TodoColorContainer = styled.div`

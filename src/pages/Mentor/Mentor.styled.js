@@ -90,7 +90,8 @@ export const Button = styled.button`
   }
 `
 export const MentorTagContainer = styled.div`
-  right: 50;
+  position: absolute;
+  right: 0;
   /* background: yellow; */
   padding-top: 30px;
   padding-right: 20px;

@@ -40,7 +40,7 @@ const Mentor = ({ mentorImage, mentorName, mentorRole, mentorTeam }: MentorProps
   const functionThatReturnPromise = () => new Promise(resolve => setTimeout(resolve, 3000))
 
   const handleMeeting = () => {
-    alert('hi')
+    // alert('hi')
     setIsMeetingModalOpened(false)
     toast.promise(functionThatReturnPromise, {
       pending: 'Scheduling Meeting with Mentor',
@@ -59,17 +59,17 @@ const Mentor = ({ mentorImage, mentorName, mentorRole, mentorTeam }: MentorProps
           <div>
             <MentorName>{mentorName}</MentorName>
             <MentorSoials>
-              <a href='https://www.linkedin.com'>
-                <IconCircle >
+              <a href='https://www.linkedin.com' target={'_blank'} rel='noreferrer'>
+                <IconCircle red>
                   <BsLinkedin size={20} />
                 </IconCircle>
               </a>
-              <a href='https://twitter.com'>
+              <a href='https://twitter.com' target={'_blank'}>
                 <IconCircle>
                   <BsTwitter size={20} />
                 </IconCircle>
               </a>
-              <a href='https://www.google.com'>
+              <a href='https://www.google.com' target={'_blank'}>
                 <IconCircle>
                   <BsGlobe size={20} />
                 </IconCircle>

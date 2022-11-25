@@ -18,11 +18,11 @@ const Challenges = () => {
       <p>Upcoming</p>
       {/* <Row> */}
       <Swiper
-        spaceBetween={10}
+        spaceBetween={5}
         pagination={{
           clickable: true,
         }}
-        style={{ width: '80vw', height: 'fit-content' }}
+        style={{ maxWidth: '100vw', height: 'fit-content' }}
         breakpoints={{
           375: {
             slidesPerView: 1,
@@ -70,18 +70,19 @@ const Challenges = () => {
         pagination={{
           clickable: true,
         }}
-        style={{ width: '80vw', height: 'fit-content' }}
+        style={{ maxWidth: '100vw', height: 'fit-content' }}
         breakpoints={{
-          375: {
+          // when window width is >= 640px
+          640: {
+            // width: 640,
             slidesPerView: 1,
-          },
-          700: {
-            slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 50,
           },
           // when window width is >= 768px
           768: {
-            slidesPerView: 3,
+            width: 768,
+            slidesPerView: 2,
+            spaceBetween: 50,
           },
         }}
         modules={[Autoplay, Pagination]}

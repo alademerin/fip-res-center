@@ -6,7 +6,7 @@ export const StyledNavBar = styled.div`
   height: 100vh;
   background: #393dc6;
   /* position: fixed; */
-  overflow: scroll;
+  /* overflow: scroll; */
   h1 {
     margin: 0;
     padding: 0;

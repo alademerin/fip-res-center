@@ -2,8 +2,8 @@
   /* background: green; */
   /* border: 1px solid black; */
   @media screen and (max-width: 1000px) {
-    background: red;
-    width: 400px;
+    /* background: red; */
+    width: 100vw;
   }
 }
 .swiper-container {
@@ -14,7 +14,8 @@
 
 @media screen and (max-width: 640px) {
   .swiper-container {
-    width: 400px;
+    /* background: red; */
+    width: 100vw;
   }
 }
 

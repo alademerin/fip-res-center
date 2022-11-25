@@ -21,8 +21,11 @@ import './Dashboard.css'
 
 const Dashboard: React.FC = () => {
   const { app }: any = AppConsumer()
+  const handleDoneBtnClicked = (id: number) => {
+    alert(id)
+  }
   return (
-    <div style={{ width: '100vw' }}>
+    <div >
       <Header headerImg={sg} userName={app.user} />
       <DashBoardContainer>
         <DashBoardContainerItem>
@@ -58,9 +61,11 @@ const Dashboard: React.FC = () => {
               {app.challenges.map((challenge: any) => (
                 <SwiperSlide style={{ display: 'flex', justifyContent: 'center' }}>
                   <ChallengeCard
+                    id={challenge.id}
                     title={challenge.title}
                     description={challenge.description}
                     img={challenge.imgUrl}
+                    // doneBtnClicked={handleDoneBtnClicked}
                   />
                 </SwiperSlide>
               ))}

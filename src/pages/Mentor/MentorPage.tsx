@@ -5,7 +5,7 @@ const MentorPage: React.FC = () => {
 
   // console.log(isMessageModalOpened)
   return (
-    <div style={{ width: '80vw' }}>
+    <div style={{}}>
       <h1 style={{ paddingLeft: '25px' }}>Mentors</h1>
       <Mentor
         mentorName='Gbenga Okonkwo'

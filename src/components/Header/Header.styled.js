@@ -10,7 +10,7 @@ export const StyledHeader = styled.div`
   border-bottom: 1px solid #f8f8f8;
   @media screen and (max-width: 1000px) {
     display: flex;
-    width: 80%;
+    width: 100vw;
     /* display: block; */
   }
 `

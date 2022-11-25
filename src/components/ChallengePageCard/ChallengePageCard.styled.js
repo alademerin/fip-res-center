@@ -9,7 +9,7 @@ export const Card = styled.div`
   background-image: url(${({ img }) => img});
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   /* padding: 10px 0; */
   display: flex;
   h3,

@@ -9,7 +9,8 @@ export const ChallengeCardContainer = styled.div`
   border-radius: 5px;
   flex-direction: column;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  max-height: 450px;
+  max-height: 350px;
+  /* background: green; */
   h2,
   p {
     padding: 0 60px;
