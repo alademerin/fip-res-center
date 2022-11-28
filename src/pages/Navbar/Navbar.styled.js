@@ -12,7 +12,7 @@ export const StyledNavBar = styled.div`
     padding: 0;
   }
   @media screen and (max-width: 1000px) {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     display: ${({ visible }) => (visible ? 'block' : 'none')};
     padding-top: 30px;
