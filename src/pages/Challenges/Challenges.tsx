@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+// import React, { useEffect } from 'react'
 import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper'
@@ -84,7 +84,7 @@ const Challenges = () => {
           // when window width is >= 768px
           768: {
             width: 768,
-            // slidesPerView: 2,
+            slidesPerView: 2,
             spaceBetween: 50,
           },
         }}
@@ -95,8 +95,6 @@ const Challenges = () => {
         }}
         // loop={true}
         className='swiper-container'
-        // loop={true}
-        // className='mySwiper'
       >
         {app.challenges
           .filter((challenge: any) => challenge.completed === true)
@@ -118,3 +116,4 @@ const Challenges = () => {
 }
 
 export default Challenges
+
