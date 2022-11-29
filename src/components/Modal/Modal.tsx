@@ -7,6 +7,9 @@ import {
   ModalOverlay,
   ModalView,
 } from './Modal.styled'
+import { Modal as PageModal } from 'react-responsive-modal'
+import 'react-responsive-modal/styles.css'
+import './Modal.css'
 
 interface ModalProps {
   isOpened: boolean
@@ -17,26 +20,32 @@ interface ModalProps {
 }
 
 const Modal = ({ isOpened, children, title, closeButtonClicked, actionClicked }: ModalProps) => {
-  if (!isOpened) return null
-  return createPortal(
-    <div>
-      <ModalOverlay></ModalOverlay>
-      <ModalView>
-        <h2>{title}</h2>
-        <ModalContent>
-          <div className='content'>{children}</div>
-        </ModalContent>
-        <ButtonsContainer>
-          <ModalButton className='close-button' onClick={closeButtonClicked}>
-            Close
-          </ModalButton>
-          <ModalButton className='close-button' action onClick={actionClicked}>
-            Send
-          </ModalButton>
-        </ButtonsContainer>
-      </ModalView>
-    </div>,
-    document.getElementById('modal')!
+  // if (!isOpened) return null
+  // return createPortal(
+  //   <div>
+  //     <ModalOverlay></ModalOverlay>
+  //     <ModalView>
+  //       <h2>{title}</h2>
+  //       <ModalContent>
+  //         <div className='content'>{children}</div>
+  //       </ModalContent>
+  //     </ModalView>
+  //   </div>,
+  //   document.getElementById('modal')!
+  // )
+  return (
+    <PageModal classNames={{modal:'modal'}}  open={isOpened} onClose={closeButtonClicked}>
+      <h2>{title}</h2>
+      <ModalContent>{children}</ModalContent>
+      <ButtonsContainer>
+        <ModalButton className='close-button' onClick={closeButtonClicked}>
+          Close
+        </ModalButton>
+        <ModalButton className='close-button' action onClick={actionClicked}>
+          Send
+        </ModalButton>
+      </ButtonsContainer>
+    </PageModal>
   )
 }
 

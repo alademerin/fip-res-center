@@ -10,6 +10,7 @@
 
 @media screen and (max-width: 768px) {
   .swiper-container {
-    width: 768px;
+    width: 100%;
+    background:red;
   }
 }

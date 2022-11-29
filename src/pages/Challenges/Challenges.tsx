@@ -15,25 +15,26 @@ const Challenges = () => {
   return (
     <Container>
       <h1>Challenges</h1>
-      <p>Upcoming</p>
+      <p>Pending</p>
       {/* <Row> */}
       <Swiper
-        spaceBetween={5}
+        spaceBetween={10}
         pagination={{
           clickable: true,
         }}
-        style={{ maxWidth: '100vw', height: 'fit-content' }}
+        // style={{ maxWidth: '100vw', height: 'fit-content' }}
         breakpoints={{
-          375: {
+          // when window width is >= 640px
+          640: {
+            // width: 640,
             slidesPerView: 1,
-          },
-          700: {
-            slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 50,
           },
           // when window width is >= 768px
           768: {
-            slidesPerView: 3,
+            width: 768,
+            slidesPerView: 2,
+            spaceBetween: 50,
           },
         }}
         modules={[Autoplay, Pagination]}
@@ -43,6 +44,8 @@ const Challenges = () => {
         }}
         // loop={true}
         className='swiper-container'
+        // loop={true}
+        // className='mySwiper'
       >
         {app.challenges ? (
           app.challenges
@@ -70,7 +73,7 @@ const Challenges = () => {
         pagination={{
           clickable: true,
         }}
-        style={{ maxWidth: '100vw', height: 'fit-content' }}
+        // style={{ maxWidth: '100vw', height: 'fit-content' }}
         breakpoints={{
           // when window width is >= 640px
           640: {
@@ -81,7 +84,7 @@ const Challenges = () => {
           // when window width is >= 768px
           768: {
             width: 768,
-            slidesPerView: 2,
+            // slidesPerView: 2,
             spaceBetween: 50,
           },
         }}
@@ -90,7 +93,7 @@ const Challenges = () => {
           delay: 5000,
           disableOnInteraction: false,
         }}
-        loop={true}
+        // loop={true}
         className='swiper-container'
         // loop={true}
         // className='mySwiper'

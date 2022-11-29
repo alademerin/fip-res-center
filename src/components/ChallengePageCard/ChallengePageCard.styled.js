@@ -17,6 +17,9 @@ export const Card = styled.div`
     color: white;
     margin-bottom: 5px;
   }
+  :hover: {
+    /* background: red; */
+  }
 `
 export const Description = styled.a`
   color: white;
@@ -32,8 +35,8 @@ export const Details = styled.div`
   width: inherit;
   height: inherit;
   border-radius: inherit;
-  transition: opacity 0.9s;
-  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s;
+  background: rgba(0, 0, 0, 0.8);
   h3 {
     margin-bottom: 0;
   }
@@ -48,19 +51,18 @@ export const Details = styled.div`
 `
 
 export const CardButton = styled.button`
-
-    display: ${({ completed }) => (completed ? 'none' : 'block')};
-    background: #393dc6;
-    border: none;
-    padding: 5px 10px;
-    /* width:100px; */
-    align-self: center;
-    border-radius: 3px;
-    color: white;
-    margin-top: 10px;
-    font-size: 15px;
-    :hover {
-      background: #4850de;
-      opacity: 0.9;
+  display: ${({ completed }) => (completed ? 'none' : 'block')};
+  background: #393dc6;
+  border: none;
+  padding: 5px 10px;
+  /* width:100px; */
+  align-self: center;
+  border-radius: 3px;
+  color: white;
+  margin-top: 10px;
+  font-size: 15px;
+  :hover {
+    background: #4850de;
+    opacity: 0.9;
   }
 `

@@ -16,7 +16,7 @@ export const StyledNavBar = styled.div`
     z-index: 2;
     display: ${({ visible }) => (visible ? 'block' : 'none')};
     padding-top: 30px;
-    min-height: 1000px;
+    height: 2000px;
     /* width: 0; */
     /* display: block; */
   }
@@ -32,7 +32,7 @@ export const NLink = styled(NavLink)`
 export const HamburgerContainer = styled.div`
   display: none;
   margin-top: 10px;
-  position: 'absolute';
+  position: fixed;
   right: 0;
   @media screen and (max-width: 1000px) {
     z-index: 3;

@@ -1,0 +1,12 @@
+.modal {
+  border-radius: 5px;
+  /* background: blue; */
+  width: 500px;
+}
+
+@media screen and (max-width: 1000px) {
+  .modal {
+    /* background: red; */
+    width: 100vw;
+  }
+}

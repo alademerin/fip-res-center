@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
   }
   return (
     <div style={{ display: 'flex' }}>
-      <HamburgerContainer style={{position:'absolute',}}>
+      <HamburgerContainer style={{}}>
         <Hamburger toggled={isVisible} toggle={setIsVisible} />
       </HamburgerContainer>
 
@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
         </div>
       </StyledNavBar>
 
-      <div style={{}}>
+      <div onClick={()=>{setIsVisible(false)}}>
         <Outlet />
       </div>
     </div>

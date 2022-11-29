@@ -18,7 +18,7 @@ export const ModalView = styled.div`
   border-radius: 5px;
   transition: width 2s, height 4s;
   @media screen and (max-width: 1000px) {
-    max-width: 300px;
+    /* max-width: 300px; */
   }
 
   h2 {
@@ -38,7 +38,7 @@ export const ModalOverlay = styled.div`
   /* border: 1px solid red; */
   background: rgba(0, 0, 0, 0.7);
   @media screen and (max-width: 1000px) {
-    width:100%;
+    width: 100%;
   }
 `
 export const ModalContent = styled.div`
@@ -54,11 +54,11 @@ export const ModalContent = styled.div`
     border: 1px solid #aaa;
     padding: 5px;
     height: 30px;
-    width: 480px;
+    width: 100%;
     border-radius: 5px;
   }
   textarea {
-    width: 480px;
+    width: 100%;
     height: 10rem;
     border: 1px solid #aaa;
     border-radius: 5px;
