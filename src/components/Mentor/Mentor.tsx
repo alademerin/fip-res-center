@@ -64,12 +64,12 @@ const Mentor = ({ mentorImage, mentorName, mentorRole, mentorTeam }: MentorProps
                   <BsLinkedin size={20} />
                 </IconCircle>
               </a>
-              <a href='https://twitter.com' target={'_blank'}>
+              <a href='https://twitter.com' target={'_blank'} rel='noreferrer'>
                 <IconCircle>
                   <BsTwitter size={20} />
                 </IconCircle>
               </a>
-              <a href='https://www.google.com' target={'_blank'}>
+              <a href='https://www.google.com' target={'_blank'} rel='noreferrer'>
                 <IconCircle>
                   <BsGlobe size={20} />
                 </IconCircle>

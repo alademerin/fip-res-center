@@ -8,16 +8,16 @@ const MentorPage: React.FC = () => {
     <div style={{}}>
       <h1 style={{ paddingLeft: '25px' }}>Mentors</h1>
       <Mentor
-        mentorName='Gbenga Okonkwo'
-        mentorImage='https://images.unsplash.com/photo-1612720572242-fefde96650f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFmcmljYW4lMjBtYWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+        mentorName='Al-amin Abdulkareem'
+        mentorImage='https://media-exp1.licdn.com/dms/image/C4D03AQEw5SaDefCjZg/profile-displayphoto-shrink_800_800/0/1660480818676?e=1675296000&v=beta&t=9H-kZ4ftEtnte1LqGlwNhrnTGdh9lHEHUfGX4wMWf2s'
         mentorRole='Frontend Engineer'
-        mentorTeam='SAFRecords'
+        mentorTeam='SAFSIMS'
       />
       <Mentor
-        mentorName='Abubakar Williams'
-        mentorImage='https://images.unsplash.com/photo-1512372923090-7b14fb496d44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWZyaWNhbiUyMG1hbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
-        mentorRole='Backend Engineer'
-        mentorTeam='SAFApply'
+        mentorName='James Vendi'
+        mentorImage='https://media-exp1.licdn.com/dms/image/C4E03AQHUY1qEcoZpNA/profile-displayphoto-shrink_800_800/0/1611050012166?e=1675296000&v=beta&t=I8zTyoVqibhAk1LoluPfTq5CwHzxAEyNnttpVOSG-vM'
+        mentorRole='UI/UX Designer'
+        mentorTeam='SAFRecords'
       />
       {/* <Mentor /> */}
     </div>
